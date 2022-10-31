@@ -10,40 +10,131 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: hsl(216, 12%, 8%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 420px;
+      height: 640px;
+    }
+
+    .component {
+      display: flex;
+      flex-direction: column;
+      background-color: hsl(213, 19%, 18%);
+      border-radius: 10px;
+      width: 375px;
+      height: 400px;
+      margin: auto;
+      justify-content: left;
+      align-items: center;
+      font-family: 'Overpass', sans-serif;
+    }
+
+    .rating-icon-bg {
+      background-color: hsl(213, 19%, 23%);
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: -284px;
+    }
+
+    h1 {
+      color: hsl(0, 0%, 100%);
+      margin-left: -106px;
+      margin-bottom: 10px;
+    }
+
+    .rating-request {
+      color: hsl(217, 12%, 63%);
+      width: 330px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+
+    p {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .rating-options {
+      display: flex;
+      justify-content: space-between;
+     
+    }
+
+    .options {
+      background-color: hsl(213, 19%, 23%);
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
+<div class="container">
+    <!-- Rating state start -->
+  <div class="component">
+    <div class="rating-icon-bg">
+      <img class="rating-icon" src="./images/icon-star.svg" alt="star icon">
+    </div>
+    
+    <h1>How did we do?</h1>
+    <div class="rating-request">
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+    </div>
 
-  <!-- Rating state start -->
+    <div class="rating-options">
+      <div class="options" id="opt-one">1</div>
+      <div class="options" id="opt-two">2</div>
+      <div class="options" id="opt-three">3</div>
+      <div class="options" id="opt-four">4</div>
+      <div class="options" id="opt-five">5</div>
+    </div>
+    <button type="button" id="submit-rating-btn">Submit</button>
 
-  How did we do?
+    
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <!-- Rating state end -->
 
-  1 2 3 4 5
+    <!-- Thank you state start -->
 
-  Submit
+    You selected <!-- Add rating here --> out of 5
 
-  <!-- Rating state end -->
+    Thank you!
 
-  <!-- Thank you state start -->
+    We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
 
-  You selected <!-- Add rating here --> out of 5
+    <!-- Thank you state end -->
 
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div>  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+</div>
 </body>
 </html>
