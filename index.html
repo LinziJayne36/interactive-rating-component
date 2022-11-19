@@ -16,6 +16,15 @@
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
         <style>
+            :root {
+                --orange: hsl(25, 97%, 53%);
+                --lightGrey: hsl(217, 12%, 63%);
+                --mediumGreay: hsl(216, 12%, 54%);
+                --veryDarkBlue: hsl(216, 12%, 8%);
+                --darkBlue: hsl(213, 19%, 18%);
+                --white: hsl(0, 0%, 100%);
+
+            }
             @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
             .attribution {
                 font-size: 11px;
@@ -69,7 +78,7 @@
 
             h1 {
                 color: hsl(0, 0%, 100%);
-                margin-left: -116px;
+                margin-left: -105px;
                 margin-bottom: 10px;
             }
 
@@ -105,7 +114,7 @@
             }
 
             .options:hover {
-              background-color: hsl(25, 97%, 53%);
+              background-color: var(--orange);
               color:hsl(0, 0%, 100%);
             }
 
@@ -121,14 +130,14 @@
                 height: 48px;
                 border: none;
                 color: hsl(0, 0%, 100%);
-                background-color: hsl(25, 97%, 53%);
+                background-color: var(--orange);
                 font-size: 18px;
                 cursor: pointer;
             }
 
             #submit-rating-btn:hover {
                 background-color: hsl(0, 0%, 100%);
-                color: hsl(25, 97%, 53%);
+                color: var(--orange);
             }
 
 /* Styles for thank you state */
@@ -158,7 +167,7 @@
             #selected {
               width: 175px;
               border-radius: 40px;
-              color:hsl(25, 97%, 53%);
+              color: var(--orange);
               background-color:hsl(213, 19%, 23%);
               text-align: center;
               padding: 6px 2px 4px 2px;
